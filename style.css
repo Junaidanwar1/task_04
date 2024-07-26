@@ -1,0 +1,316 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+figure{
+    display: flex;
+    justify-content: center;
+    margin-top: -20px;
+}
+figure img{
+    width: 200px;
+    border-radius: 50%;
+}
+/* navbar */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    color: black;
+    background-color: black;
+    height: 50px;
+    /* padding-bottom: 20px; */
+}
+nav a{
+    color:white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.Home{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 50px;
+}
+.Home div{
+    padding-top: 140px;
+}
+.Home img{
+    margin-top: 20px;
+    width: 400px;
+    margin-left: 20px;
+    border-radius: 5%;
+
+}
+.Home h2{
+    font-size: 40px;
+    font-weight: 800;
+}
+.Home input{
+    width: 250px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+/* section */
+section{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+section p{
+    padding-top: 30px;
+}
+/* best seller */
+.best-selling{
+    padding-top: 20px;
+}
+.best-selling h3{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20;
+}
+/* books group */
+.Books-group{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+.Books{
+    height: 350px;
+    border: 2px solid black;
+    background-color: aliceblue;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+.Books img{
+    width: 350px;
+    height: 300px;
+    border-radius: 5px;
+    filter : opacity(0.9);
+}
+.Books-group h6{
+    position: relative;
+    top: -120px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bolder;
+    font-size: larger;
+}
+.Books button{
+    background: black;
+    color: aquamarine;
+    width: 10vw;
+    height: 7vh;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: -120px;
+    border: none;
+}
+/* books collection */
+.card-group{
+    display: flex;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+#books{
+    position: relative;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    font-size: x-large;
+}
+.card-group .card{
+    width: 40px;
+    height: 500px;
+    padding: 30px;
+    background-color: aqua;
+    margin: 10px;
+    border: 2px solid blue;
+}
+.card-img-top{
+    width: 323px;
+    height: 350px;
+}
+.card .card-body{
+    background-color: white;
+}
+.card-body .card-title{
+    background-color: antiquewhite;
+    color: black;
+    text-align: center;
+    height: 60px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.card button{
+    background-color: black;
+    color: white;
+    height: 7vh;
+    width: 10vw;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding-top: 10px;
+    margin-bottom: 10px ;
+
+}
+/* footer */
+footer{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;  
+}
+footer p{
+    font-size: medium;
+}
+footer :first-child{
+    font-size: large;
+}
+footer div a{
+    color:rebeccapurple ;
+    display: block;
+    font-size: medium;
+}
+footer img{
+    width: 145px;
+}
+/* copyright */
+.copyright{
+    margin-top: 70px;
+    text-align: center;
+}
+.copyright p{
+    color: yellowgreen;
+    font-size: medium;
+}
+
+
+/* For Mobile apps */
+@media(max-width: 420px){
+    figure{
+        margin-top: -15px;
+    }
+    figure img{
+        width: 100px;
+    }  
+    /* home */
+    .Home{
+        margin-right: 10px;
+    }
+    .Home div{
+        padding: 70px;
+        padding-left: 40px;
+    }
+    .Home img{
+        width: 180px;
+        margin-left: -80px;
+        margin-top: 10px;
+    }
+    .Home h2{
+        font-size: 10px;
+    }
+    .Home input{
+        width: 100px;
+        height: 20px;
+        margin-top: 7px;
+    }
+    /* section */
+    section{
+        padding-bottom: 10px;
+        padding-top: 30px;
+    }
+    section h3{
+        font-size: medium;
+    }
+    section p{
+        font-size: smaller;
+        padding-top: 10px;
+    }
+    /* best sellers */
+    .Books-group{
+        display: grid;
+        margin-left: 10px;
+    }
+    .Books{
+        margin-bottom: 20px; 
+       }
+    .Books img{
+        width: 300px;
+        height: 350px;
+    }
+    .Books button{
+        width: 20vh;
+        height: 5vh;
+        display: block;
+        margin: 0 auto;
+    } 
+    /* best collection */
+    .card-group{
+        display: grid;
+        margin-left: 22px;
+    }
+    .card-group .card{
+        margin-bottom: 20px;
+        margin-top: 40px;
+        width: 320px;
+        height: 470px;
+        margin-left: -2px;
+    }
+    .card .card-title{
+        height: 40px;
+        font-size: small;
+        padding-top: 3px;
+    }
+    .card button{
+        background-color: blueviolet;
+        color: blanchedalmond;
+        width: 20vw;
+        height: 5vh;
+        display: block;
+        margin: 0 auto;
+        border: none;
+    } 
+    /* connect */
+    .connect{
+        margin-top: 50px;
+        background-color: white;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .connect h3{
+        padding-bottom: 20px;
+        background-color: white;
+    }
+    .connect img{
+        width: 40px;
+        background-color:brown;
+    }
+    /* connect */
+    .connect{
+        background-color: aliceblue;
+    }
+    .connect h3{
+        font-size: medium;
+        margin-top: -20px;
+    }
+    .connect img{
+        width: 30px;
+    }
+    /* footer */
+    footer p{
+        font-size: 2vw;
+    }
+    footer div :first-child{
+        font-size: 2vw;
+    }
+    footer div a{
+        font-size: 1.5vw;
+        visibility: hidden;
+    }
+}
